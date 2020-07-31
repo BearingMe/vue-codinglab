@@ -12,7 +12,8 @@ export default {
   head: {
     title: {inner: 'Encontre Novos Desenvolvedores Agora | Coding Community', separator: ''},
     meta: [
-      {name: 'description', content: 'Aprenda a programar online com Python, Javascript, Java, PHP, C/C++, C# e várias outras linguagens.'}
+      {name: 'description', content: 'Aprenda a programar online com Python, Javascript, Java, PHP, C/C++, C# e várias outras linguagens.'},
+      {name: 'google-site-verification', content: '7N_vA5SF4MKiA8RLty31t3NFKlQ33pb_K12tIQHX-M0'},
     ]
   }
 }
