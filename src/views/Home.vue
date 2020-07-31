@@ -1,17 +1,19 @@
 <template>
   <div class="home">
-    <the-navbar />
+    welcome from homepage
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import TheNavbar from '@/components/TheNavbar.vue'
-
 export default {
   name: 'Home',
-  components: {
-    TheNavbar
+
+
+  head: {
+    title: {inner: 'Encontre Novos Desenvolvedores Agora | Coding Community'},
+    meta: [
+      {name: 'description', content: 'Aprenda a programar online com Python, Javascript, Java, PHP, C/C++, C# e várias outras linguagens.'}
+    ]
   }
 }
 </script>

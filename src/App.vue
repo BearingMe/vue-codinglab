@@ -2,16 +2,14 @@
   <div id="app">
     <header>
       <the-loginbar />
-      <img class="spotlight" :src="require('@/assets/images/spotlight.png')">
+      <img class="spotlight" alt="Logo da linguagem Python" :src="require('@/assets/images/spotlight.png')">
       <the-navbar />
     </header>
 
+    <body class="container py-5">
+      <router-view/>
+    </body>
 
-    <!-- <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/> -->
   </div>
 </template>
 
@@ -30,6 +28,15 @@ export default {
 <style lang="scss">
 // todos os botões tem px-4
 // a distância entre botões é de ml-3
+
+body {
+  background-color: #1d1d1d;
+  color: #ffffff;
+
+  p {
+    color: rgba($color: #ffffff, $alpha: 0.8);
+  }
+}
 
 .bg-transparent {
   background-color: transparent;

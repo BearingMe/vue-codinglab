@@ -23,11 +23,9 @@
       <div class="collapse navbar-collapse" id="collapsibleNavId">
         <ul class="navbar-nav mx-auto">
           <!-- incio -->
-          <li class="nav-item active">
-            <a class="nav-link" href="#">
-              Inicio
-              <span class="sr-only">(current)</span>
-            </a>
+          <li class="nav-item">
+            <router-link tag="a" class="nav-link" :to="{name: 'Home'}"> Inicio </router-link>
+            <span v-if="this.$route.name == 'Home'"  class="sr-only">(current)</span>
           </li>
 
           <!-- comunidade  -->
@@ -47,7 +45,8 @@
 
           <!-- sobre  -->
           <li class="nav-item">
-            <a class="nav-link" href="#">Sobre</a>
+            <router-link tag="a" class="nav-link" :to="{name: 'About'}"> Sobre </router-link>
+            <span v-if="this.$route.name == 'About'"  class="sr-only">(current)</span>
           </li>
         </ul>
       </div>
@@ -75,7 +74,13 @@
 
 <script>
 export default {
-  name: "TheNavbar",
+  name: "TheNavbar"
 };
 </script>
 
+<style lang="scss" scoped>
+.router-link-active {
+  color: white !important
+}
+
+</style>
