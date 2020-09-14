@@ -1,6 +1,6 @@
 <template>
-  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-    <div class="container">
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark py-sm-3 py-md-4">
+    <div class="container bg-dark w-100">
       <!-- brand  -->
       <a class="navbar-brand" href="#">
         <img :src="require('@/assets/svg/brand.svg')" />
@@ -20,53 +20,55 @@
       </button>
 
       <!-- menu items  -->
-      <div class="collapse navbar-collapse" id="collapsibleNavId">
+      <div class="collapse navbar-collapse w-100" id="collapsibleNavId">
         <ul class="navbar-nav mx-auto">
-          <!-- incio -->
+          <!-- inicio -->
           <li class="nav-item">
-            <router-link tag="a" class="nav-link" :to="{name: 'Home'}"> Inicio </router-link>
-            <span v-if="this.$route.name == 'Home'"  class="sr-only">(current)</span>
+            <router-link tag="a" class="nav-link" :to="{name: 'Home'}">Inicio</router-link>
+            <span v-if="this.$route.name == ''" class="sr-only">(current)</span>
+          </li>
+
+          <!-- artigos  -->
+          <li class="nav-item">
+            <router-link tag="a" class="nav-link" :to="{name: 'Article'}">Artigos</router-link>
+            <span v-if="this.$route.name == 'Article'" class="sr-only">(current)</span>
           </li>
 
           <!-- comunidade  -->
           <li class="nav-item">
-            <a class="nav-link" href="#">Comunidade</a>
-          </li>
-
-          <!-- trabalhos  -->
-          <li class="nav-item">
-            <a class="nav-link" href="#">Trabalhos</a>
+            <router-link tag="a" class="nav-link" :to="{name: 'Community'}">Comunidade</router-link>
+            <span v-if="this.$route.name == 'Community'" class="sr-only">(current)</span>
           </li>
 
           <!-- contato  -->
           <li class="nav-item">
-            <a class="nav-link" href="#">Contato</a>
+            <router-link tag="a" class="nav-link" :to="{name: 'Contact'}">Contato</router-link>
+            <span v-if="this.$route.name == 'Contact'" class="sr-only">(current)</span>
           </li>
 
           <!-- sobre  -->
           <li class="nav-item">
-            <router-link tag="a" class="nav-link" :to="{name: 'About'}"> Sobre </router-link>
-            <span v-if="this.$route.name == 'About'"  class="sr-only">(current)</span>
+            <router-link tag="a" class="nav-link" :to="{name: 'About'}">Sobre</router-link>
+            <span v-if="this.$route.name == 'About'" class="sr-only">(current)</span>
           </li>
         </ul>
       </div>
 
       <!-- social media  -->
-      <div class="text-light">
-        <!-- instagram  -->
-        <a class="btn text-light" href="#" role="button">
-          <i class="fa fa-lg fa-instagram" aria-hidden="true"></i>
-        </a>
-
-        <!-- facebook -->
-        <a class="btn text-light" href="#" role="button">
-          <i class="fa fa-lg fa-facebook" aria-hidden="true"></i>
-        </a>
-
-        <!-- twitter -->
-        <a class="btn text-light" href="#" role="button">
-          <i class="fa fa-lg fa-twitter" aria-hidden="true"></i>
-        </a>
+      <div class="collapse navbar-collapse w-auto" id="collapsibleNavId">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item d-inline-flex">
+            <a class="nav-link mr-3 mr-sm-1" href="#">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a class="nav-link mr-3 mr-sm-1" href="#">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a class="nav-link mr-3 mr-sm-1" href="#">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   </nav>
@@ -74,13 +76,14 @@
 
 <script>
 export default {
-  name: "TheNavbar"
+  name: "TheNavbar",
 };
 </script>
 
 <style lang="scss" scoped>
-.router-link-active {
-  color: white !important
+.router-link-exact-active {
+  color: white !important;
 }
+
 
 </style>
