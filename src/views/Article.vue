@@ -1,7 +1,7 @@
 <template>
   <div class="container">
       <div class="row mt-5">
-        welcome from article
+        
       </div>
   </div>
 </template>
