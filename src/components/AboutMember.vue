@@ -3,32 +3,36 @@
     <div class="row">
       <div class="col-auto pr-0">
         <figure class="rounded-circle bg-info">
-          <img :src="picture" class="profile-pic rounded-circle" alt="Imagem de perfil" />
+          <img
+            :src="picture"
+            class="profile-pic rounded-circle"
+            alt="Imagem de perfil"
+          />
         </figure>
       </div>
       <div class="col">
         <div>
-					<span class="name text-white">{{name}}</span>
-					<span 
-						v-for="(value, index) in roleArray" 
-						:key="index"
-						class="role"
-						:class="value"
-					>
-						{{classes[value.trim()]}}
-					</span>
+          <span class="name text-white">{{ name }}</span>
+          <span
+            v-for="(value, index) in roleArray"
+            :key="index"
+            class="role"
+            :class="value"
+          >
+            {{ classes[value.trim()] }}
+          </span>
         </div>
         <hr class="bg-info my-2" />
 
         <p class="d-inline">
-          {{readMore? description: computedDescription}}  
-					<a
-						class="read-more"
-						v-if="descriptionOverflow" 
-						@click="readMore = !readMore">
-						{{readMore ? '' : 'Ler mais'}}
-					</a>
-
+          {{ readMore ? description : computedDescription }}
+          <a
+            class="read-more"
+            v-if="descriptionOverflow"
+            @click="readMore = !readMore"
+          >
+            {{ readMore ? "" : "Ler mais" }}
+          </a>
         </p>
       </div>
     </div>
@@ -49,25 +53,25 @@ export default {
 
   data() {
     return {
-			readMore: false,
-			classes: {
-				'role-developer': "Web Developer",
-				'role-founder': "Membro Fundador",
-				'role-designer': "UI/UX Designer",
-				'role-contribuitor': "Contribuidor"
-			}
-		};
-	},
+      readMore: false,
+      classes: {
+        "role-developer": "Web Developer",
+        "role-founder": "Membro Fundador",
+        "role-designer": "UI/UX Designer",
+        "role-contribuitor": "Contribuidor",
+      },
+    };
+  },
 
   computed: {
-		roleArray() {
-			let roles = this.role.split(',')
-			return roles.reverse() 
-		},
+    roleArray() {
+      let roles = this.role.split(",");
+      return roles.reverse();
+    },
 
-		maxLettersShown() {
-			return (window.innerWidth / 7)
-		},
+    maxLettersShown() {
+      return window.innerWidth / 7;
+    },
 
     descriptionOverflow() {
       return this.description.length > this.maxLettersShown;
@@ -98,42 +102,41 @@ figure {
 }
 
 .name {
-	font-size: 16px;
-	font-weight: 500;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .role {
-	@media only screen and (max-width: 768px) {
-		display: none;
-	}
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
 
-	position: relative;
-	top: -5px;
-	padding: 4px 10px;
-	margin-left: 8px;
-	font-size: 12px;
-	border-radius: 6px;	
-	float: right;
+  position: relative;
+  top: -5px;
+  padding: 4px 10px;
+  margin-left: 8px;
+  font-size: 12px;
+  border-radius: 6px;
+  float: right;
 
-	&-designer {
-		background-color: rgb(1, 155, 152);
-		box-shadow: 0 8px 16px 0 rgba(0, 184, 181, 0.4);
-	}
+  &-designer {
+    background-color: rgb(1, 155, 152);
+    box-shadow: 0 8px 16px 0 rgba(0, 184, 181, 0.4);
+  }
 
-	&-developer {
-		background-color: #d14c8a;
-		box-shadow: 0 8px 16px 0 rgba(231, 105, 150, 0.4);
-	}
+  &-developer {
+    background-color: #d14c8a;
+    box-shadow: 0 8px 16px 0 rgba(231, 105, 150, 0.4);
+  }
 
-	&-founder {
-		background-color: #6c5ce7;
-		box-shadow: 0 5px 16px 0 rgba(128, 111, 253, 0.548);
-	}
+  &-founder {
+    background-color: #6c5ce7;
+    box-shadow: 0 5px 16px 0 rgba(128, 111, 253, 0.548);
+  }
 
-	&-contribuitor {
-		background-color: #df6b44;
-		box-shadow: 0 8px 16px 0 rgba(196, 105, 77, 0.4);
-	}
+  &-contribuitor {
+    background-color: #df6b44;
+    box-shadow: 0 8px 16px 0 rgba(196, 105, 77, 0.4);
+  }
 }
-
 </style>

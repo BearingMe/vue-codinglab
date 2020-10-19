@@ -14,14 +14,14 @@
     <div class="row mt-5">
       <!-- membro  -->
       <about-member
-        picture="https://cdn.icon-icons.com/icons2/1736/PNG/512/4043272-avatar-lazybones-sloth-sluggard_113274.png"
+        picture="https://f0.pngfuel.com/png/980/886/male-portrait-avatar-png-clip-art.png"
         name="Smith"
         description="Conhecido por sua preguiça e completa falta de noção, é uma pessoa que pode ser descrito facilmente como retardado. É lembrado principalmente por falhas homéricas, como destruir uma dezena de distros Linux e estar quase sempre bêbado. Foi o maior responsável pelo design do site e consequentemente o atraso de mais de um ano na produção. Dizem que seu maior sonho é ser agricultor de cannabis."
         role="role-founder, role-developer, role-designer"
       />
 
       <about-member
-        picture="https://cdn.icon-icons.com/icons2/483/PNG/512/art-palette_47204.png"
+        picture="https://f0.pngfuel.com/png/980/886/male-portrait-avatar-png-clip-art.png"
         name="Lorem"
         description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit provident incidunt voluptatem repellat itaque non quae explicabo debitis laudantium. Impedit sed praesentium quam minima ex! Incidunt a rem corporis esse!"
         role="role-developer"

@@ -2,27 +2,34 @@
   <div id="app">
     <header>
       <the-loginbar />
-      <img class="spotlight" alt="Logo da linguagem Python" :src="require('@/assets/images/spotlight.png')">
+      <the-spotlight />
       <the-navbar />
     </header>
 
-    <body class="py-5">
-      <router-view/>
+    <body>
+      <router-view />
     </body>
 
+    <footer>
+      <the-footer />
+    </footer>
   </div>
 </template>
 
 <script>
-import TheLoginbar from '@/components/TheLoginbar.vue'
-import TheNavbar from '@/components/TheNavbar.vue'
+import TheLoginbar from "@/components/TheLoginbar.vue";
+import TheNavbar from "@/components/TheNavbar.vue";
+import TheFooter from "@/components/TheFooter.vue";
+import TheSpotlight from "@/components/TheSpotlight.vue";
 
 export default {
   components: {
     TheLoginbar,
     TheNavbar,
+    TheFooter,
+    TheSpotlight,
   }
-}
+};
 </script>
 
 <style lang="scss">
@@ -37,7 +44,6 @@ body {
   p {
     color: rgba($color: #ffffff, $alpha: 0.8);
   }
-  
 }
 
 img {
@@ -53,7 +59,7 @@ a:hover {
   color: white !important;
   font-weight: bold;
   cursor: pointer;
-  
+
   &:hover {
     color: darken($color: white, $amount: 10%) !important;
   }
@@ -76,18 +82,11 @@ a:hover {
 .text {
   &-light {
     filter: brightness(90%);
-  };
+  }
 
   &-secondary {
-   color: rgba(255, 255, 255, 0.658) !important;
+    color: rgba(255, 255, 255, 0.658) !important;
   }
-}
-
-.spotlight {
-  min-height: 70vh;
-  max-height: 85vh;
-  width: 100%;
-  object-fit: cover;
 }
 
 .navbar-brand * {
@@ -97,7 +96,6 @@ a:hover {
 .btn {
   border-radius: 1px !important;
 }
-
 
 .btn-purple {
   background-color: #6f2b95;
@@ -124,7 +122,7 @@ a:hover {
 textarea,
 input,
 label,
-button, 
+button,
 a {
   &:hover,
   &:focus,
@@ -163,6 +161,4 @@ select:-webkit-autofill:focus {
   -webkit-text-fill-color: whitesmoke;
   transition: background-color 5000s ease-in-out 0s;
 }
-
-
 </style>

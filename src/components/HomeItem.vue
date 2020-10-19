@@ -1,11 +1,11 @@
 <template>
   <div class="row mt-4">
-    <div class="col-12 col-md-5 mb-3">
+    <div class="col-12 col-md-4 mb-3">
       <img
         :src="src"
       />
     </div>
-    <div class="col-12 col-md-7">
+    <div class="col-12 col-md">
       <h4 class="small text-white">
         {{date}}
         <span v-if="tag">

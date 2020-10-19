@@ -8,7 +8,7 @@ import Article from '../views/Article.vue'
 
 Vue.use(VueRouter)
 
-  const routes = [
+const routes = [
   {
     path: '/',
     name: 'Home',

@@ -83,7 +83,7 @@ export default {
 
   head: {
     title: { inner: "Contato | Coding Community", separator: " " },
-    mete: [
+    meta: [
       {
         name: "description",
         content: "Algum problema ou sugestão? Fale conosco.",
