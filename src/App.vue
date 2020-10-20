@@ -57,7 +57,7 @@ a:hover {
 
 .read-more {
   color: white !important;
-  font-weight: bold;
+  font-weight: 600;
   cursor: pointer;
 
   &:hover {
@@ -75,7 +75,7 @@ a:hover {
   }
 
   &-dark {
-    background-color: #121212 !important;
+    background-color: #121208 !important;
   }
 }
 

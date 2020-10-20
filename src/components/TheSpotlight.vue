@@ -6,7 +6,7 @@
     <img
       class="spotlight"
       alt="Logo da linguagem Python"
-      :src="require('@/assets/images/spotlight.png')"
+      :src="require('@/assets/images/spotlight2.jpg')"
     />
   </div>
 </template>

@@ -1,7 +1,7 @@
 <template>
   <section id="footer">
     <div class="container">
-      <div class="row text-center text-md-left d-flex flex-row justify-content-between">
+      <div class="row d-none d-md-flex flex-row justify-content-between">
         <div class="col-md">
           <h5>Quick links</h5>
           <ul class="list-unstyled quick-links">
