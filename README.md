@@ -1,27 +1,27 @@
 # coding
 
-## Project setup
+## configurar projeto
 ```
 yarn install
 ```
 
-### Compiles and hot-reloads for development
+### servidor para desenvolvimento
 ```
 yarn serve
 ```
 
-### Compiles and minifies for production
+### compila e minifica para a produção
 ```
 yarn build
 ```
 
-### Lints and fixes files
+### arruma os arquivos
 ```
 yarn lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### configuração personalizada 
+veja [Configuration Reference](https://cli.vuejs.org/config/).
 
 
 // para atualizar depois 
