@@ -41,16 +41,16 @@
 				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
 					<ul class="list-unstyled list-inline social text-center">
             <the-footer-social href="#" color="#833AB4">
-              <i class="fa fa-instagram"></i>
+              <i class="fab fa-instagram"></i>
             </the-footer-social>
             <the-footer-social href="#" color="#4267B2">
-              <i class="fa fa-facebook"></i>
+              <i class="fab fa-facebook-f"></i>
             </the-footer-social>
             <the-footer-social href="#" color="#1DA1F2">
-              <i class="fa fa-twitter"></i>
+              <i class="fab fa-twitter"></i>
             </the-footer-social>
             <the-footer-social href="#" color="#25d366">
-              <i class="fa fa-whatsapp"></i>
+              <i class="fab fa-whatsapp"></i>
             </the-footer-social>
             <the-footer-social href="#" color="#D44638">
               <i class="fa fa-envelope"></i>

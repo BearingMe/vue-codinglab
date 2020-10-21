@@ -59,13 +59,13 @@
         <ul class="navbar-nav ml-auto">
           <li class="nav-item d-inline-flex">
             <a class="nav-link mr-3 mr-sm-1" href="#">
-              <i class="fa fa-instagram" aria-hidden="true"></i>
+              <i class="fab fa-instagram" aria-hidden="true"></i>
             </a>
             <a class="nav-link mr-3 mr-sm-1" href="#">
-              <i class="fa fa-facebook" aria-hidden="true"></i>
+              <i class="fab fa-facebook" aria-hidden="true"></i>
             </a>
             <a class="nav-link mr-3 mr-sm-1" href="#">
-              <i class="fa fa-twitter" aria-hidden="true"></i>
+              <i class="fab fa-twitter" aria-hidden="true"></i>
             </a>
           </li>
         </ul>
